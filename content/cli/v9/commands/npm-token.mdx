@@ -57,7 +57,13 @@ This lets you list, create and revoke authentication tokens.
 
 - `npm token create [--read-only] [--cidr=<cidr-ranges>]`: Create a new authentication token. It can be `--read-only`, or accept a list of [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) ranges with which to limit use of this token. This will prompt you for your password, and, if you have two-factor authentication enabled, an otp.
 
-  Currently, the cli can not generate automation tokens. Please refer to the [docs website](https://docs.npmjs.com/creating-and-viewing-access-tokens) for more information on generating automation tokens.
+  Currently, the cli can not generate automation tokens or granular access tokens. Please refer to the [docs website](https://docs.npmjs.com/creating-and-viewing-access-tokens) for more information on generating automation tokens and granular access tokens.
+
+  <Note>
+
+  **Note:** Starting from npm CLI v10, granular access tokens support configurable 2FA bypass options for CI/CD workflows. See the [latest documentation](/cli/commands/npm-token) for more details.
+
+  </Note>
 
 ```bash
 +----------------+--------------------------------------+
